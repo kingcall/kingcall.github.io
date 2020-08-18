@@ -1,104 +1,120 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    
-<meta charset="utf-8" >
+    <meta charset="utf-8" >
 
 <title> Welcome to Kingcall&#39;s GitHub Pages | Welcome to Kingcall&#39;s GitHub Pages</title>
-<meta name="description" content="生命不息 奋斗不止">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://kingcall.github.io/favicon.ico?v=1597757911641">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="https://kingcall.github.io/favicon.ico?v=1597759865338">
 <link rel="stylesheet" href="https://kingcall.github.io/styles/main.css">
 
 
 
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
+    <meta name="description" content="博主介绍
+个人简介
+
+博主本名刘文强，是一个来自西北偏远地区的大男孩，西北的风土人情赋予了他开朗洒脱的性情，西北的艰苦的生活赋予了他不屈不挠
+的吃苦精神，一生信奉的三句话：
+
+生命不息，奋斗不止
+栽好梧桐树，自有凤凰来
+当你最爱的人需要你的..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://kingcall.github.io">
-        <img class="avatar" src="https://kingcall.github.io/images/avatar.png?v=1597757911641" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://kingcall.github.io">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://kingcall.github.io">
+        <img src="https://kingcall.github.io/images/avatar.png?v=1597759865338" class="site-logo">
         <h1 class="site-title">Welcome to Kingcall&#39;s GitHub Pages</h1>
       </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
     </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
-  </div>
-</div>
-
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
+    <div>
       
         
-          <a href="/" class="menu purple-link">
+          <a href="/" class="site-nav">
             首页
           </a>
         
       
         
-          <a href="/bigdata" class="menu purple-link">
+          <a href="/bigdata" class="site-nav">
             大数据
           </a>
         
       
         
-          <a href="/design" class="menu purple-link">
+          <a href="/design" class="site-nav">
             软件设计
           </a>
         
       
         
-          <a href="/tags" class="menu purple-link">
+          <a href="/tags" class="site-nav">
             标签
           </a>
         
       
         
-          <a href="/archives" class="menu purple-link">
+          <a href="/archives" class="site-nav">
             归档
           </a>
         
       
         
-          <a href="/post/about" class="menu purple-link">
+          <a href="/post/about" class="site-nav">
             关于
           </a>
         
       
     </div>
   </div>
-</transition>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      生命不息 奋斗不止
+    </div>
+    <div class="site-footer">
+      Welcome to Kingcall's GitHub Pages | <a class="rss" href="https://kingcall.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
 
 
-      <div class="content-container">
-        <div class="post-detail">
-          
-          <h2 class="post-title"> Welcome to Kingcall&#39;s GitHub Pages</h2>
-          <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2018-12-12</span>
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title"> Welcome to Kingcall&#39;s GitHub Pages</h2>
+            <div class="post-date">2018-12-12</div>
             
-          </div>
-          <div class="post-content">
-            <h2 id="博主介绍">博主介绍</h2>
+            <div class="post-content" v-pre>
+              <h2 id="博主介绍">博主介绍</h2>
 <h3 id="个人简介">个人简介</h3>
 <ul>
 <li>博主本名刘文强，是一个来自西北偏远地区的大男孩，西北的风土人情赋予了他开朗洒脱的性情，西北的艰苦的生活赋予了他不屈不挠<br>
@@ -123,37 +139,22 @@
 2019-05到2020-06 掌门一对一 大数据开发
 </code></pre>
 
+            </div>
+            
+            
+
+            
+
           </div>
+
         </div>
-
-        
       </div>
-
-      
-
-      <div class="site-footer">
-  <div class="slogan">生命不息 奋斗不止</div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-  Welcome to Kingcall's GitHub Pages | <a class="rss" href="https://kingcall.github.io/atom.xml" target="_blank">RSS</a>
-</div>
-
-
     </div>
-    <script type="application/javascript">
 
-hljs.initHighlightingOnLoad()
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
 
 var app = new Vue({
   el: '#app',
@@ -163,6 +164,8 @@ var app = new Vue({
 })
 
 </script>
+
+
 
 
 
